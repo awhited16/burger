@@ -33,7 +33,7 @@
           data: newBurger
         }).then(function() {
           console.log("New burger added");
-          redirect("/api/burgers");
+          redirect("/");
       })
     }
 
@@ -52,7 +52,7 @@
         data: isDevoured
       }).then(function() {
         console.log("Burger eaten");
-        redirect("/api/burgers/" + id);
+        redirect("/");
       });
     });
   </script>

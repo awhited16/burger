@@ -14,7 +14,7 @@
                         <p>
                             {{this.burger_name}}
                         </p>
-                        <form action="burgers/updateOne/{{this.id}}?_method=PUT" method="POST">
+                        <form action="api/burgers/{{this.id}}?_method=PUT" method="POST">
                             <input type="hidden" name="devoured" value="true">
                             <button class="devouredBtn" type="submit">Devour it!</button>
                         </form>
@@ -40,7 +40,7 @@
     </div>
     <div class="row">
         <div class="col-md-12 text-center">
-            <form method="POST" action="burgers/insertOne" class="newBurger text-center">
+            <form method="POST" action="api/burgers" class="newBurger text-center">
                 <textarea id="textArea" type="text" name="burger_name" class="newBurgerName"></textarea>
                 <button class="createBtn" type="submit" >Submit</button>
             <p>Enter a burger you want to eat, then click the Submit button to add it to the list.</p>
