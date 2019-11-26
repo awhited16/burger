@@ -1,11 +1,11 @@
 <div class="container">
     <div class="text-center">
         <h1>Eat-da-Burger</h1>
-        <img src="../public/assets/img/burger_img.jpg" alt="burger">
+        <img src="https://www.pngarts.com/files/3/Burger-Transparent-Images.png" alt="burger">
         <p>Manage burgers with this app</p>
     </div>
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-6">
             {{!-- List of burgers --}}
             <ol>
                 {{#each burgers}}
@@ -23,7 +23,7 @@
                 {{/each}}
             </ol>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
             {{!-- devoured burgers --}}
             <ol>
                 {{#each burgers}}
@@ -41,7 +41,9 @@
     <div class="row">
         <div class="col-md-12 text-center">
             <form method="POST" action="api/burgers" class="newBurger text-center">
-                <textarea id="textArea" type="text" name="burger_name" class="newBurgerName"></textarea>
+                <div>
+                    <textarea id="textArea" type="text" name="burger_name" class="newBurgerName"></textarea>
+                </div>
                 <button class="createBtn" type="submit" >Submit</button>
             <p>Enter a burger you want to eat, then click the Submit button to add it to the list.</p>
         </div>
